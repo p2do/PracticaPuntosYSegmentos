@@ -54,7 +54,7 @@ public class Segmento {
 	 * @return la distancia entre punto y punto
 	 */
 	public double distancia() {
-		double formula=Math.pow(Math.sqrt(this.b.x-this.a.x)+ Math.sqrt(this.b.y-this.a.y),2);
+		double formula=Math.sqrt(Math.pow(this.b.x-this.a.x,2)+ Math.pow(this.b.y-this.a.y,2));
 		return formula;
 	}
 }
